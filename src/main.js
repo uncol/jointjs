@@ -31,7 +31,7 @@ const minimap = new Minimap({
 // Загрузка demo.json при старте
 async function loadDemo() {
   try {
-    const response = await fetch('/data/demo.json');
+    const response = await fetch(import.meta.env.BASE_URL + 'data/demo.json');
     if (response.ok) {
       const data = await response.json();
       editor.fromJSON(data);

@@ -1,6 +1,15 @@
 import JointAPI, { LinkElement, removeScalableBackground, setScalableBackground, setStencilDir, SnapManager, ViewportManager } from './joint/index.ts';
 
 // Default paper configuration
+// Paths that start with / need BASE_URL prepended if not root
+function resolvePath(path) {
+  if (!path) return path;
+  if (path.startsWith('/') && import.meta.env.BASE_URL !== '/') {
+    return import.meta.env.BASE_URL.replace(/\/$/, '') + path;
+  }
+  return path;
+}
+
 const DEFAULT_PAPER_CONFIG = {
   width: 3200,
   height: 1800,
@@ -29,8 +38,14 @@ export class DiagramEditor {
     this.containerId = containerId;
     this.paperConfig = { ...DEFAULT_PAPER_CONFIG, ...paperConfig };
 
-    // Set stencil directory for elements
-    setStencilDir(this.paperConfig.stencilDir);
+    // Resolve paths for stencil directory and background image
+    let stencilPath = resolvePath(this.paperConfig.stencilDir);
+    setStencilDir(stencilPath);
+    
+    const backgroundImagePath = resolvePath(this.paperConfig.backgroundImage);
+    if (backgroundImagePath && backgroundImagePath !== this.paperConfig.backgroundImage) {
+      this.paperConfig.backgroundImage = backgroundImagePath;
+    }
 
     const containerEl = document.getElementById(containerId);
 
@@ -162,8 +177,15 @@ export class DiagramEditor {
   updatePaperConfig(paperConfig) {
     this.paperConfig = { ...this.paperConfig, ...paperConfig };
 
-    // Update stencil directory
-    setStencilDir(this.paperConfig.stencilDir);
+    // Resolve paths for stencil directory and background image
+    let stencilPath = resolvePath(this.paperConfig.stencilDir);
+    setStencilDir(stencilPath);
+    
+    // Update background image with resolved path
+    const backgroundImagePath = resolvePath(this.paperConfig.backgroundImage);
+    if (backgroundImagePath && backgroundImagePath !== this.paperConfig.backgroundImage) {
+      this.paperConfig.backgroundImage = backgroundImagePath;
+    }
 
     // Update paper dimensions
     this.paper.setDimensions(this.paperConfig.width, this.paperConfig.height);

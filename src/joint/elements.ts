@@ -8,7 +8,7 @@
 import { dia, shapes, util } from "@joint/core";
 import type { CellNamespace, FontIconElementType, ImageIconElementType } from "./types.ts";
 
-// Configurable stencil directory path
+// Configurable stencil directory path (default)
 let stencilDir = "/stencils";
 
 /**
