@@ -1,0 +1,185 @@
+@import '@gufo-labs/font/gufo-font.css';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #f5f5f5;
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+button:last-child {
+  background: #e74c3c;
+}
+
+button:last-child:hover {
+  background: #c0392b;
+}
+
+#paper-container {
+  flex: 1;
+  overflow: hidden;
+  background: #ffffff;
+  position: relative;
+}
+
+/* Zoom Toolbar */
+.zoom-toolbar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 6px 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  font-size: 14px;
+}
+
+.zoom-btn {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  transition: all 0.15s;
+}
+
+.zoom-btn:hover {
+  background: #e0e0e0;
+  border-color: #ccc;
+}
+
+.zoom-btn:active {
+  background: #d0d0d0;
+}
+
+.zoom-select-wrapper {
+  position: relative;
+}
+
+.zoom-select {
+  padding: 4px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  min-width: 70px;
+}
+
+.zoom-display {
+  min-width: 45px;
+  text-align: center;
+  font-weight: 500;
+  color: #333;
+  font-size: 13px;
+}
+
+.snap-toggle {
+  margin-left: 8px;
+}
+
+.snap-toggle.grid-mode {
+  background: #e3f2fd;
+  border-color: #2196F3;
+  color: #2196F3;
+}
+
+.snap-toggle.free-mode {
+  background: #fff3e0;
+  border-color: #ff9800;
+  color: #ff9800;
+}
+
+.snap-icon {
+  font-size: 14px;
+}
+
+.edit-icon {
+  font-size: 14px;
+}
+
+/* Minimap */
+.minimap {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.minimap-viewport-rect {
+  pointer-events: none;
+}
+
+/* Snap guides */
+.snap-guides {
+  pointer-events: none;
+}
+
+.guide-line {
+  pointer-events: none;
+}

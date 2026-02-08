@@ -1,0 +1,23 @@
+{
+    "name": "jointjs-sandbox",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "test": "vitest",
+        "test:ui": "vitest --ui"
+    },
+    "dependencies": {
+        "@gufo-labs/font": "^0.0.9",
+        "@joint/core": "^4.2.3",
+        "browser-fs-access": "^0.38.0"
+    },
+    "devDependencies": {
+        "jsdom": "^28.0.0",
+        "vite": "^7.3.1",
+        "vitest": "^4.0.18"
+    }
+}

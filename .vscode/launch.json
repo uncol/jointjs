@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Chrome (Incognito)",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}",
+            "runtimeArgs": [
+                "--incognito"
+            ],
+            "preLaunchTask": "dev server"
+        },
+        {
+            "name": "Firefox (Private)",
+            "type": "firefox",
+            "request": "launch",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}",
+            "firefoxArgs": [
+                "-private-window"
+            ],
+            "preLaunchTask": "dev server"
+        },
+        {
+            "name": "Debug generate.js",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/utils/generate.js",
+            "args": [],
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "runtimeArgs": [
+                "--experimental-modules"
+            ]
+        }
+    ]
+}
