@@ -1,0 +1,1897 @@
+{
+  "paperConfig": {
+    "width": 3200,
+    "height": 1800,
+    "backgroundImage": "/demo.png",
+    "backgroundOpacity": 0.3,
+    "stencilDir": "/stencils",
+    "gridSize": 10
+  },
+  "graphData": {
+    "cells": [
+      {
+        "type": "noc.ImageIconElement",
+        "id": "6973ffeb8ce3e3bca2229017",
+        "position": {
+          "x": 1300,
+          "y": 100
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-router",
+            "width": "47.5",
+            "height": "32.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Атмосфера+ZIAX"
+          },
+          "ipaddr": {
+            "text": ""
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "69723f3e3819bc893f2ab6ab",
+        "position": {
+          "x": 1600,
+          "y": 1025
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-router",
+            "width": "47.5",
+            "height": "32.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Видеоаналитика"
+          },
+          "ipaddr": {
+            "text": ""
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "69723f163819bc893f2ab6a1",
+        "position": {
+          "x": 1050,
+          "y": 100
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-router",
+            "width": "47.5",
+            "height": "32.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Корпоративная связь"
+          },
+          "ipaddr": {
+            "text": ""
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "6973fff38ce3e3bca222901a",
+        "position": {
+          "x": 1525,
+          "y": 100
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-router",
+            "width": "47.5",
+            "height": "32.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "СИЗАР-База знаний"
+          },
+          "ipaddr": {
+            "text": ""
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "69723f5c3819bc893f2ab6b4",
+        "position": {
+          "x": 1000,
+          "y": 1025
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-router",
+            "width": "47.5",
+            "height": "32.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Свободно-конфигурируемая зона"
+          },
+          "ipaddr": {
+            "text": ""
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "69723f483819bc893f2ab6ae",
+        "position": {
+          "x": 2150,
+          "y": 1025
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-router",
+            "width": "47.5",
+            "height": "32.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Сети передачи данных и мониторинг"
+          },
+          "ipaddr": {
+            "text": ""
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "69723f363819bc893f2ab6a8",
+        "position": {
+          "x": 2900,
+          "y": 75
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-router",
+            "width": "47.5",
+            "height": "32.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Ситуационный центр"
+          },
+          "ipaddr": {
+            "text": ""
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "69723f2d3819bc893f2ab6a5",
+        "position": {
+          "x": 1950,
+          "y": 100
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-router",
+            "width": "47.5",
+            "height": "32.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Технологическая связь"
+          },
+          "ipaddr": {
+            "text": ""
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "69723f523819bc893f2ab6b1",
+        "position": {
+          "x": 2500,
+          "y": 1025
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-router",
+            "width": "47.5",
+            "height": "32.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Энербас+Ревизор"
+          },
+          "ipaddr": {
+            "text": ""
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "31",
+        "position": {
+          "x": 2025,
+          "y": 900
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-workstation",
+            "width": "46.25",
+            "height": "37.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "СОВА Моноблок"
+          },
+          "ipaddr": {
+            "text": "10.100.16.162"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "25",
+        "position": {
+          "x": 2700,
+          "y": 200
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-ip-phone",
+            "width": "54.025002",
+            "height": "29.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Т-16@10018"
+          },
+          "ipaddr": {
+            "text": "10.100.16.19"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "5",
+        "position": {
+          "x": 950,
+          "y": 350
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-ip-phone",
+            "width": "54.025002",
+            "height": "29.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Т-25@10002"
+          },
+          "ipaddr": {
+            "text": "10.100.16.3"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "17",
+        "position": {
+          "x": 2555.9749979999997,
+          "y": 275.5
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-ip-phone",
+            "width": "54.025002",
+            "height": "29.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Рупор громкоговорителя настенный"
+          },
+          "ipaddr": {
+            "text": ""
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "32",
+        "position": {
+          "x": 1800,
+          "y": 875
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-workgroup-switch",
+            "width": "62.5",
+            "height": "32.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "СОВА NSS4330-32TXP-1"
+          },
+          "ipaddr": {
+            "text": "10.100.16.221"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "16",
+        "position": {
+          "x": 2325,
+          "y": 25
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-phone",
+            "width": "40",
+            "height": "30",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "УПГ-78#3"
+          },
+          "ipaddr": {
+            "text": "10.100.16.105"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "13",
+        "position": {
+          "x": 1650,
+          "y": 400
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-ip-phone",
+            "width": "54.025002",
+            "height": "29.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "РТУ Дилинговый пульт@10016"
+          },
+          "ipaddr": {
+            "text": "10.100.16.17"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "39",
+        "position": {
+          "x": 1800,
+          "y": 800
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-workgroup-switch",
+            "width": "62.5",
+            "height": "32.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "СОВА IDS3730-48P-6X"
+          },
+          "ipaddr": {
+            "text": "10.100.16.220"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "14",
+        "position": {
+          "x": 2050,
+          "y": 250
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-phone",
+            "width": "40",
+            "height": "30",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "УПГ-78#1"
+          },
+          "ipaddr": {
+            "text": "10.100.16.102"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "35",
+        "position": {
+          "x": 875,
+          "y": 325
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-ip-phone",
+            "width": "54.025002",
+            "height": "29.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Т-13@10007"
+          },
+          "ipaddr": {
+            "text": "10.100.16.8"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "38",
+        "position": {
+          "x": 1800,
+          "y": 950
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-workgroup-switch",
+            "width": "62.5",
+            "height": "32.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "СОВА NSS4330-32TXP-2"
+          },
+          "ipaddr": {
+            "text": ""
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "27",
+        "position": {
+          "x": 1400,
+          "y": 875
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-workstation",
+            "width": "46.25",
+            "height": "37.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Vizorlabs Ноутбук"
+          },
+          "ipaddr": {
+            "text": "10.100.16.226"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "7",
+        "position": {
+          "x": 900,
+          "y": 100
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-ip-phone",
+            "width": "54.025002",
+            "height": "29.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Т-13@10004"
+          },
+          "ipaddr": {
+            "text": "10.100.16.5"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "3",
+        "position": {
+          "x": 1025,
+          "y": 225
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-ip-phone",
+            "width": "54.025002",
+            "height": "29.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Т-25@10010"
+          },
+          "ipaddr": {
+            "text": "10.100.16.11"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "48",
+        "position": {
+          "x": 1775,
+          "y": 225
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Flaticon-hub",
+            "width": "32",
+            "height": "32",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "LCE"
+          },
+          "ipaddr": {
+            "text": "10.100.16.100"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "6",
+        "position": {
+          "x": 1225,
+          "y": 225
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-ip-phone",
+            "width": "54.025002",
+            "height": "29.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Т-16@10011"
+          },
+          "ipaddr": {
+            "text": "10.100.16.12"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "18",
+        "position": {
+          "x": 2150,
+          "y": 250
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-phone",
+            "width": "40",
+            "height": "30",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "УПГ-07"
+          },
+          "ipaddr": {
+            "text": "10.100.16.103"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "26",
+        "position": {
+          "x": 1525,
+          "y": 900
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-workstation",
+            "width": "46.25",
+            "height": "37.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Vizorlabs Моноблок"
+          },
+          "ipaddr": {
+            "text": "10.100.16.225"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "8",
+        "position": {
+          "x": 950,
+          "y": 200
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-ip-phone",
+            "width": "54.025002",
+            "height": "29.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Т-22@10003"
+          },
+          "ipaddr": {
+            "text": "10.100.16.4"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "42",
+        "position": {
+          "x": 1650,
+          "y": 250
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-ip-phone",
+            "width": "54.025002",
+            "height": "29.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Т-25@10009"
+          },
+          "ipaddr": {
+            "text": "10.100.16.10"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "43",
+        "position": {
+          "x": 900,
+          "y": 50
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-ip-phone",
+            "width": "54.025002",
+            "height": "29.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Т-13@10013"
+          },
+          "ipaddr": {
+            "text": "10.100.16.14"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "36",
+        "position": {
+          "x": 875,
+          "y": 175
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-ip-phone",
+            "width": "54.025002",
+            "height": "29.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Т-13@10008"
+          },
+          "ipaddr": {
+            "text": "10.100.16.9"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "19",
+        "position": {
+          "x": 2275,
+          "y": 250
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-ip-phone",
+            "width": "54.025002",
+            "height": "29.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Техносвязь Пульт СОДС@10021"
+          },
+          "ipaddr": {
+            "text": "10.100.16.115"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "15",
+        "position": {
+          "x": 2325,
+          "y": 75
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-phone",
+            "width": "40",
+            "height": "30",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "УПГ-78#2"
+          },
+          "ipaddr": {
+            "text": "10.100.16.104"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "12",
+        "position": {
+          "x": 900,
+          "y": 425
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-ip-phone",
+            "width": "54.025002",
+            "height": "29.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "РТУ Пульт СОДС@10015"
+          },
+          "ipaddr": {
+            "text": "10.100.16.16"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "4",
+        "position": {
+          "x": 950,
+          "y": 300
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-ip-phone",
+            "width": "54.025002",
+            "height": "29.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Т-27@10012"
+          },
+          "ipaddr": {
+            "text": "10.100.16.13"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "41",
+        "position": {
+          "x": 1650,
+          "y": 300
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-ip-phone",
+            "width": "54.025002",
+            "height": "29.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Т-27@10014"
+          },
+          "ipaddr": {
+            "text": "10.100.16.15"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "21",
+        "position": {
+          "x": 2900,
+          "y": 250
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-workstation",
+            "width": "46.25",
+            "height": "37.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "САЦ Моноблок 2"
+          },
+          "ipaddr": {
+            "text": "10.100.16.130"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "47",
+        "position": {
+          "x": 1775,
+          "y": 325
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Flaticon-hub",
+            "width": "32",
+            "height": "32",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "LDE 2"
+          },
+          "ipaddr": {
+            "text": "10.100.16.99"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "22",
+        "position": {
+          "x": 2900,
+          "y": 325
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-workstation",
+            "width": "46.25",
+            "height": "37.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "САЦ Моноблок 3"
+          },
+          "ipaddr": {
+            "text": "10.100.16.131"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "23",
+        "position": {
+          "x": 2900,
+          "y": 400
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-workstation",
+            "width": "46.25",
+            "height": "37.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "САЦ Моноблок 4"
+          },
+          "ipaddr": {
+            "text": "10.100.16.132"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "28",
+        "position": {
+          "x": 1475,
+          "y": 950
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Flaticon-web-camera",
+            "width": "32",
+            "height": "32",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Vizorlabs Камера Dahua"
+          },
+          "ipaddr": {
+            "text": "10.100.16.227"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "10",
+        "position": {
+          "x": 1300,
+          "y": 225
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-workstation",
+            "width": "46.25",
+            "height": "37.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Атмосфера Моноблок"
+          },
+          "ipaddr": {
+            "text": "10.100.16.21"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "2",
+        "position": {
+          "x": 875,
+          "y": 250
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-ip-phone",
+            "width": "54.025002",
+            "height": "29.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Т-27@10001"
+          },
+          "ipaddr": {
+            "text": "10.100.16.2"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "33",
+        "position": {
+          "x": 2375,
+          "y": 900
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-workstation",
+            "width": "46.25",
+            "height": "37.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Энербас Моноблок 1"
+          },
+          "ipaddr": {
+            "text": "10.100.16.161"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "44",
+        "position": {
+          "x": 1975,
+          "y": 250
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-phone",
+            "width": "40",
+            "height": "30",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "УПГ-12E-BM"
+          },
+          "ipaddr": {
+            "text": "10.100.16.101"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "9",
+        "position": {
+          "x": 1100,
+          "y": 225
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-workstation",
+            "width": "46.25",
+            "height": "37.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "РТУ моноблок 1"
+          },
+          "ipaddr": {
+            "text": "10.100.16.20"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "24",
+        "position": {
+          "x": 2625,
+          "y": 200
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-ip-phone",
+            "width": "54.025002",
+            "height": "29.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Т-25@10017"
+          },
+          "ipaddr": {
+            "text": "10.100.16.18"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "46",
+        "position": {
+          "x": 1775,
+          "y": 375
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Flaticon-hub",
+            "width": "32",
+            "height": "32",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "LDE 1"
+          },
+          "ipaddr": {
+            "text": "10.100.16.98"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "29",
+        "position": {
+          "x": 1675,
+          "y": 925
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-ip-phone",
+            "width": "54.025002",
+            "height": "29.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Vizorlabs гобопроектор"
+          },
+          "ipaddr": {
+            "text": "10.100.16.228"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "40",
+        "position": {
+          "x": 1650,
+          "y": 350
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-ip-phone",
+            "width": "54.025002",
+            "height": "29.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Т-27@10005"
+          },
+          "ipaddr": {
+            "text": "10.100.16.6"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "37",
+        "position": {
+          "x": 900,
+          "y": 0
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-ip-phone",
+            "width": "54.025002",
+            "height": "29.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Т-25@10006"
+          },
+          "ipaddr": {
+            "text": "10.100.16.7"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "30",
+        "position": {
+          "x": 1325,
+          "y": 900
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-ip-phone",
+            "width": "54.025002",
+            "height": "29.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "Vizorlabs громкоговоритель"
+          },
+          "ipaddr": {
+            "text": "10.100.16.229"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "11",
+        "position": {
+          "x": 1525,
+          "y": 225
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-workstation",
+            "width": "46.25",
+            "height": "37.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "СИЗАР Моноблок"
+          },
+          "ipaddr": {
+            "text": "10.100.16.22"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "45",
+        "position": {
+          "x": 1775,
+          "y": 275
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Flaticon-hub",
+            "width": "32",
+            "height": "32",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "LBC-8"
+          },
+          "ipaddr": {
+            "text": "10.100.16.110"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "20",
+        "position": {
+          "x": 2900,
+          "y": 175
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-workstation",
+            "width": "46.25",
+            "height": "37.5",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "САЦ Моноблок 1"
+          },
+          "ipaddr": {
+            "text": "10.100.16.129"
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "697ba229d58805e96c998be6",
+        "position": {
+          "x": 1850,
+          "y": 375
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-cloud",
+            "width": "102.74",
+            "height": "59.05",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "(СОВА IDS3730-48P-6X: gigabitethernet0/30, LDE 2: port0, LDE 1: port0, УПГ-07: port0, УПГ-12E-BM: port0, LBC-8: port0, LCE: port0)"
+          },
+          "ipaddr": {
+            "text": ""
+          }
+        }
+      },
+      {
+        "type": "noc.ImageIconElement",
+        "id": "697bae5bd58805e96c998c0b",
+        "position": {
+          "x": 2500,
+          "y": 550
+        },
+        "attrs": {
+          "icon": {
+            "href": "#img-Cisco-cloud",
+            "width": "102.74",
+            "height": "59.05",
+            "status": "Unknown"
+          },
+          "title": {
+            "text": "(СОВА IDS3730-48P-6X: gigabitethernet0/8, САЦ Моноблок 1: port0, САЦ Моноблок 3: port0, САЦ Моноблок 4: port0)"
+          },
+          "ipaddr": {
+            "text": ""
+          }
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "697baec7d58805e96c998c11",
+        "source": {
+          "id": "32"
+        },
+        "target": {
+          "id": "31"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 1000000000,
+          "in_bw": 1000000000,
+          "out_bw": 1000000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "6979f8fdf2119e8e0900a61d",
+        "source": {
+          "id": "39"
+        },
+        "target": {
+          "id": "25"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 1000000000,
+          "in_bw": 1000000000,
+          "out_bw": 1000000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "6979da8586f4fce918901796",
+        "source": {
+          "id": "39"
+        },
+        "target": {
+          "id": "5"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 1000000000,
+          "in_bw": 1000000000,
+          "out_bw": 1000000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "6979dae986f4fce918901799",
+        "source": {
+          "id": "32"
+        },
+        "target": {
+          "id": "6"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 1000000000,
+          "in_bw": 1000000000,
+          "out_bw": 1000000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "6979eb51f2119e8e0900a5f8",
+        "source": {
+          "id": "32"
+        },
+        "target": {
+          "id": "10"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 1000000000,
+          "in_bw": 1000000000,
+          "out_bw": 1000000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "697baf24d58805e96c998c14",
+        "source": {
+          "id": "32"
+        },
+        "target": {
+          "id": "19"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 1000000000,
+          "in_bw": 1000000000,
+          "out_bw": 1000000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "697c76e1d58805e96c998df2",
+        "source": {
+          "id": "32"
+        },
+        "target": {
+          "id": "26"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 1000000000,
+          "in_bw": 1000000000,
+          "out_bw": 1000000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "697baec7d58805e96c998c10",
+        "source": {
+          "id": "32"
+        },
+        "target": {
+          "id": "27"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 1000000000,
+          "in_bw": 1000000000,
+          "out_bw": 1000000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "697c9cf8d58805e96c998e53",
+        "source": {
+          "id": "32"
+        },
+        "target": {
+          "id": "30"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 100000000,
+          "in_bw": 100000000,
+          "out_bw": 100000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "69791d2d3e491851cf4d9569",
+        "source": {
+          "id": "32"
+        },
+        "target": {
+          "id": "39"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 1000000000,
+          "in_bw": 1000000000,
+          "out_bw": 1000000000,
+          "method": "lldp"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "6979eb51f2119e8e0900a5f9",
+        "source": {
+          "id": "32"
+        },
+        "target": {
+          "id": "33"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 1000000000,
+          "in_bw": 1000000000,
+          "out_bw": 1000000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "6979ffd9d58805e96c998849",
+        "source": {
+          "id": "39"
+        },
+        "target": {
+          "id": "13"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 1000000000,
+          "in_bw": 1000000000,
+          "out_bw": 1000000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "69791a5545b9868b4f2a9550",
+        "source": {
+          "id": "39"
+        },
+        "target": {
+          "id": "2"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 1000000000,
+          "in_bw": 1000000000,
+          "out_bw": 1000000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "69791a5545b9868b4f2a9551",
+        "source": {
+          "id": "39"
+        },
+        "target": {
+          "id": "3"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 1000000000,
+          "in_bw": 1000000000,
+          "out_bw": 1000000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "697918e345b9868b4f2a94f2",
+        "source": {
+          "id": "39"
+        },
+        "target": {
+          "id": "4"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 1000000000,
+          "in_bw": 1000000000,
+          "out_bw": 1000000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "697918e345b9868b4f2a94ef",
+        "source": {
+          "id": "39"
+        },
+        "target": {
+          "id": "8"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 1000000000,
+          "in_bw": 1000000000,
+          "out_bw": 1000000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "6979eaedf2119e8e0900a5f5",
+        "source": {
+          "id": "39"
+        },
+        "target": {
+          "id": "9"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 1000000000,
+          "in_bw": 1000000000,
+          "out_bw": 1000000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "6979ffd9d58805e96c99884a",
+        "source": {
+          "id": "39"
+        },
+        "target": {
+          "id": "12"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 1000000000,
+          "in_bw": 1000000000,
+          "out_bw": 1000000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "69793cfc8bd5ac6651e251c5",
+        "source": {
+          "id": "39"
+        },
+        "target": {
+          "id": "14"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 100000000,
+          "in_bw": 100000000,
+          "out_bw": 100000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "697ba229d58805e96c998be6-22-23",
+        "source": {
+          "id": "697ba229d58805e96c998be6"
+        },
+        "target": {
+          "id": "39"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 1000000000,
+          "in_bw": 1000000000,
+          "out_bw": 1000000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "697bae5bd58805e96c998c0b-38-39",
+        "source": {
+          "id": "697bae5bd58805e96c998c0b"
+        },
+        "target": {
+          "id": "39"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 1000000000,
+          "in_bw": 1000000000,
+          "out_bw": 1000000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "697bae5bd58805e96c998c0c",
+        "source": {
+          "id": "39"
+        },
+        "target": {
+          "id": "21"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 1000000000,
+          "in_bw": 1000000000,
+          "out_bw": 1000000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "6979ca3986f4fce918901755",
+        "source": {
+          "id": "39"
+        },
+        "target": {
+          "id": "24"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 1000000000,
+          "in_bw": 1000000000,
+          "out_bw": 1000000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "6979da8586f4fce918901794",
+        "source": {
+          "id": "39"
+        },
+        "target": {
+          "id": "35"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 100000000,
+          "in_bw": 100000000,
+          "out_bw": 100000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "69791a5545b9868b4f2a954e",
+        "source": {
+          "id": "39"
+        },
+        "target": {
+          "id": "36"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 100000000,
+          "in_bw": 100000000,
+          "out_bw": 100000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "697918e345b9868b4f2a94f1",
+        "source": {
+          "id": "39"
+        },
+        "target": {
+          "id": "42"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 1000000000,
+          "in_bw": 1000000000,
+          "out_bw": 1000000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "697918e345b9868b4f2a94f3",
+        "source": {
+          "id": "39"
+        },
+        "target": {
+          "id": "41"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 1000000000,
+          "in_bw": 1000000000,
+          "out_bw": 1000000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "6979da8586f4fce918901795",
+        "source": {
+          "id": "39"
+        },
+        "target": {
+          "id": "40"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 1000000000,
+          "in_bw": 1000000000,
+          "out_bw": 1000000000,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "697ba229d58805e96c998be6-34-35",
+        "source": {
+          "id": "697ba229d58805e96c998be6"
+        },
+        "target": {
+          "id": "48"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 0,
+          "in_bw": 0,
+          "out_bw": 0,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "697ba229d58805e96c998be6-28-29",
+        "source": {
+          "id": "697ba229d58805e96c998be6"
+        },
+        "target": {
+          "id": "18"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 0,
+          "in_bw": 0,
+          "out_bw": 0,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "697ba229d58805e96c998be6-24-25",
+        "source": {
+          "id": "697ba229d58805e96c998be6"
+        },
+        "target": {
+          "id": "47"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 0,
+          "in_bw": 0,
+          "out_bw": 0,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "697bae5bd58805e96c998c0b-42-43",
+        "source": {
+          "id": "697bae5bd58805e96c998c0b"
+        },
+        "target": {
+          "id": "22"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 0,
+          "in_bw": 0,
+          "out_bw": 0,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "697bae5bd58805e96c998c0b-44-45",
+        "source": {
+          "id": "697bae5bd58805e96c998c0b"
+        },
+        "target": {
+          "id": "23"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 0,
+          "in_bw": 0,
+          "out_bw": 0,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "697ba229d58805e96c998be6-30-31",
+        "source": {
+          "id": "697ba229d58805e96c998be6"
+        },
+        "target": {
+          "id": "44"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 0,
+          "in_bw": 0,
+          "out_bw": 0,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "697ba229d58805e96c998be6-26-27",
+        "source": {
+          "id": "697ba229d58805e96c998be6"
+        },
+        "target": {
+          "id": "46"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 0,
+          "in_bw": 0,
+          "out_bw": 0,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "697ba229d58805e96c998be6-32-33",
+        "source": {
+          "id": "697ba229d58805e96c998be6"
+        },
+        "target": {
+          "id": "45"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 0,
+          "in_bw": 0,
+          "out_bw": 0,
+          "method": "xmac"
+        }
+      },
+      {
+        "type": "noc.LinkElement",
+        "id": "697bae5bd58805e96c998c0b-40-41",
+        "source": {
+          "id": "697bae5bd58805e96c998c0b"
+        },
+        "target": {
+          "id": "20"
+        },
+        "attrs": {
+          "connector": "normal",
+          "bw": 0,
+          "in_bw": 0,
+          "out_bw": 0,
+          "method": "xmac"
+        }
+      }
+    ]
+  }
+}
