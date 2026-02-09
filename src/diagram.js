@@ -1,4 +1,4 @@
-import JointAPI, { LinkElement, removeScalableBackground, setScalableBackground, setStencilDir, SnapManager, ViewportManager } from './joint/index.ts';
+import JointAPI, { LinkElement, removeScalableBackground, setScalableBackground, setStencilDir, setupLinkHover, SnapManager, ViewportManager } from './joint/index.ts';
 
 // Default paper configuration
 // Paths that start with / need BASE_URL prepended if not root
@@ -152,6 +152,9 @@ export class DiagramEditor {
       zoomStep: 0.1,
       onViewportChange: () => this.viewport.notifyChange(),
     });
+
+    // Setup link hover highlighters
+    setupLinkHover(this.paper);
 
     this.paper.on('element:pointerdblclick', (elementView) => {
       const element = elementView.model;

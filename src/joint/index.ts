@@ -5,26 +5,27 @@
 // See LICENSE for details
 //---------------------------------------------------------------------
 
-import {dia, highlighters, shapes, util, V} from "@joint/core";
-import {cellNamespace, setStencilDir, getStencilDir} from "./elements.ts";
+import { dia, highlighters, shapes, util, V } from "@joint/core";
+import { removeScalableBackground, setScalableBackground } from "./background.ts";
+import { cellNamespace, getStencilDir, setStencilDir } from "./elements.ts";
 import * as factories from "./factories.ts";
 import * as filters from "./filters.ts";
-import {enablePanZoom} from "./pan-zoom.ts";
-import {breakText} from "./text-utils.ts";
-import {ViewportManager} from "./viewport.ts";
-import {setScalableBackground, removeScalableBackground} from "./background.ts";
-import {SnapManager} from "./snap.ts";
+import { enablePanZoom } from "./pan-zoom.ts";
+import { SnapManager } from "./snap.ts";
+import { breakText } from "./text-utils.ts";
+import { ViewportManager } from "./viewport.ts";
 
 // Re-export types
-export* from "./elements.ts";
-export* from "./factories.ts";
-export* from "./filters.ts";
-export* from "./pan-zoom.ts";
-export* from "./text-utils.ts";
-export* from "./types.ts";
-export* from "./viewport.ts";
-export* from "./background.ts";
-export* from "./snap.ts";
+export * from "./background.ts";
+export * from "./elements.ts";
+export * from "./factories.ts";
+export * from "./filters.ts";
+export * from "./link-hover.ts";
+export * from "./pan-zoom.ts";
+export * from "./snap.ts";
+export * from "./text-utils.ts";
+export * from "./types.ts";
+export * from "./viewport.ts";
 /**
  * Unified JointAPI object
  * Aggregates all JointJS functionality for NOC
