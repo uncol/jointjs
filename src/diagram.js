@@ -151,6 +151,12 @@ export class DiagramEditor {
       maxZoom: 10,
       zoomStep: 0.1,
       onViewportChange: () => this.viewport.notifyChange(),
+      onAreaSelect: (bounds) => {
+        // Zoom to the selected world bounds
+        if (bounds && bounds.width > 0 && bounds.height > 0) {
+          this.viewport.zoomToBounds(bounds, 10);
+        }
+      },
     });
 
     // Setup link hover highlighters

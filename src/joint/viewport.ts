@@ -201,6 +201,37 @@ export class ViewportManager {
   }
 
   /**
+   * Zoom to fit a specific world bounds into the viewport
+   */
+  zoomToBounds(bounds: Bounds, padding = 0): void {
+    const containerSize = this.getContainerSize();
+    const availableWidth = containerSize.width - padding * 2;
+    const availableHeight = containerSize.height - padding * 2;
+
+    if (bounds.width <= 0 || bounds.height <= 0) return;
+
+    const scaleX = availableWidth / bounds.width;
+    const scaleY = availableHeight / bounds.height;
+    let scale = Math.min(scaleX, scaleY);
+    // Clamp to min/max zoom
+    scale = Math.max(this.options.minZoom!, Math.min(this.options.maxZoom!, scale));
+
+    const scaledWidth = bounds.width * scale;
+    const scaledHeight = bounds.height * scale;
+
+    const desiredLeft = (containerSize.width - scaledWidth) / 2;
+    const desiredTop = (containerSize.height - scaledHeight) / 2;
+
+    const tx = desiredLeft - bounds.x * scale;
+    const ty = desiredTop - bounds.y * scale;
+
+    this.paper.scale(scale, scale);
+    this.paper.translate(tx, ty);
+
+    this.emit('viewport:change', this.getState());
+  }
+
+  /**
    * Reset zoom to fit view (100% = fit)
    */
   resetZoom(): void {
