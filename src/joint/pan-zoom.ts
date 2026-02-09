@@ -50,7 +50,16 @@ export function enablePanZoom(paper: dia.Paper, options: PanZoomOptions = {}): (
     e.preventDefault();
 
     const oldScale = paper.scale().sx;
-    const factor = e.deltaY < 0 ? (1 + zoomStep) : 1 / (1 + zoomStep);
+
+    // Normalize wheel delta across devices (pixels / lines / pages)
+    let delta = e.deltaY;
+    if (e.deltaMode === WheelEvent.DOM_DELTA_LINE) delta *= 16;
+    else if (e.deltaMode === WheelEvent.DOM_DELTA_PAGE) delta *= 800;
+
+    // Use exponential scale so that delta magnitude affects zoom smoothly.
+    // Negative delta -> zoom in, positive -> zoom out.
+    const dpi = (typeof window !== 'undefined' && window.devicePixelRatio) ? window.devicePixelRatio : 1;
+    const factor = Math.pow(1 + zoomStep, -delta / (100 * dpi));
     const newScale = Math.min(maxZoom, Math.max(minZoom, oldScale * factor));
     if (newScale === oldScale) return;
 
@@ -89,7 +98,10 @@ export function enablePanZoom(paper: dia.Paper, options: PanZoomOptions = {}): (
         const dy = latestPointer.y - lastPointer.y;
         const newTx = lastAppliedTx + dx;
         const newTy = lastAppliedTy + dy;
-        paper.translate(newTx, newTy);
+          const dpr = (typeof window !== 'undefined' && window.devicePixelRatio) ? window.devicePixelRatio : 1;
+          const roundTx = Math.round(newTx * dpr) / dpr;
+          const roundTy = Math.round(newTy * dpr) / dpr;
+          paper.translate(roundTx, roundTy);
         // commit applied values
         lastAppliedTx = newTx;
         lastAppliedTy = newTy;
@@ -111,7 +123,10 @@ export function enablePanZoom(paper: dia.Paper, options: PanZoomOptions = {}): (
       const dy = latestPointer.y - lastPointer.y;
       const newTx = lastAppliedTx + dx;
       const newTy = lastAppliedTy! + dy;
-      paper.translate(newTx, newTy);
+      const dpr = (typeof window !== 'undefined' && window.devicePixelRatio) ? window.devicePixelRatio : 1;
+      const roundTx = Math.round(newTx * dpr) / dpr;
+      const roundTy = Math.round(newTy * dpr) / dpr;
+      paper.translate(roundTx, roundTy);
     }
     // reset state
     pendingTranslate = null;
