@@ -38,16 +38,16 @@ const textLabelBg = TEXT_LABEL_BG === "stroke"
   : {};
 
 // Markup children for rotatable group: bg rects before texts when mode is "rect"
-const labelChildren = TEXT_LABEL_BG === "rect"
+const elementMarkup = TEXT_LABEL_BG === "rect"
   ? [
     {tagName: "rect", selector: "titleBg"},
-    {tagName: "text", selector: "title"},
+    {tagName: "text", selector: "title", className: "rotatable"},
     {tagName: "rect", selector: "ipaddrBg"},
-    {tagName: "text", selector: "ipaddr"},
+    {tagName: "text", selector: "ipaddr", className: "rotatable"},
   ]
   : [
-    {tagName: "text", selector: "title"},
-    {tagName: "text", selector: "ipaddr"},
+    {tagName: "text", selector: "title", className: "rotatable"},
+    {tagName: "text", selector: "ipaddr", className: "rotatable"},
   ];
 
 // Default attrs for bg rects (empty when mode is not "rect")
@@ -115,18 +115,7 @@ export const FontIconElement = dia.Element.define("noc.FontIconElement", {
     ...labelBgAttrs,
   },
 }, {
-  markup: [
-    {
-      tagName: "g",
-      className: "rotatable",
-      children: labelChildren,
-    },
-    {
-      tagName: "g",
-      className: "scalable",
-      children: [{tagName: "text", selector: "icon"}],
-    },
-  ],
+  markup: [...elementMarkup, {tagName: "text", selector: "icon", className: "scalable"}],
 
   initialize: function(this: FontIconElementType, ...args: dia.Element.Attributes[]){
     dia.Element.prototype.initialize.apply(this, args as [dia.Element.Attributes]);
@@ -236,18 +225,7 @@ export const ImageIconElement = dia.Element.define("noc.ImageIconElement", {
     ...labelBgAttrs,
   },
 }, {
-  markup: [
-    {
-      tagName: "g",
-      className: "rotatable",
-      children: labelChildren,
-    },
-    {
-      tagName: "g",
-      className: "scalable",
-      children: [{tagName: "image", selector: "icon"}],
-    },
-  ],
+  markup: [...elementMarkup, {tagName: "image", selector: "icon", className: "scalable"}],
 
   initialize: function(this: ImageIconElementType, ...args: dia.Element.Attributes[]){
     dia.Element.prototype.initialize.apply(this, args as [dia.Element.Attributes]);
