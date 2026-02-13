@@ -164,11 +164,17 @@ export class DiagramEditor {
 
     this.paper.on('element:pointerdblclick', (elementView) => {
       const element = elementView.model;
-      const currentText = element.attr('label/text') || 'Element';
+      const currentText = element.attr('title/text') || 'Element';
       const newText = prompt('Введите текст:', currentText);
       if (newText !== null) {
-        element.attr('label/text', newText);
+        element.attr('title/text', newText);
       }
+    });
+
+    this.paper.on('link:pointerdblclick', (linkView) => {
+      const link = linkView.model;
+      const value = link.attr("connector") || "Не назначен";
+      alert(value);
     });
 
     // Адаптивный размер и пересчёт viewport при resize
@@ -201,7 +207,7 @@ export class DiagramEditor {
 
     // Update grid size
     if (this.paperConfig.gridSize) {
-      this.paper.options.gridSize = this.paperConfig.gridSize;
+      this.paper.setGridSize(this.paperConfig.gridSize);
     }
 
     // Update scalable background
@@ -318,7 +324,10 @@ export class DiagramEditor {
 
   toJSON() {
     const graphJSON = this.graph.toJSON();
-    const {x, y, width, height} = this.graph.getBBox().inflate(10);
+    const bbox = this.graph.getBBox();
+    const inflated = bbox ? bbox.inflate(10) : null;
+    const width = inflated ? inflated.width : this.paperConfig.width;
+    const height = inflated ? inflated.height : this.paperConfig.height;
     // Export in new format with paperConfig + graphData
     const result = {
       paperConfig: {...this.paperConfig, width, height},

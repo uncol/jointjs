@@ -231,10 +231,15 @@ export const ImageIconElement = dia.Element.define("noc.ImageIconElement", {
     dia.Element.prototype.initialize.apply(this, args as [dia.Element.Attributes]);
     const attrs = this.get("attrs")?.icon || {};
     // Convert #img-* to path immediately after initialization
-    const initialHref = attrs.href;
-    if(initialHref && initialHref.startsWith("#img-")){
-      const path = this.convertImageIdToPath(initialHref);
-      this.attr("icon/href", path);
+    const initialHref = attrs.xlinkHref || attrs.href;
+    if(initialHref){
+      if(initialHref.startsWith("#img-")){
+        const path = this.convertImageIdToPath(initialHref);
+        this.attr("icon/xlinkHref", path);
+      } else if(!attrs.xlinkHref && attrs.href){
+        // Normalize legacy `href` to JointJS `xlinkHref`.
+        this.attr("icon/xlinkHref", initialHref);
+      }
     }
 
     // Apply status if specified in attributes
@@ -263,6 +268,15 @@ export const ImageIconElement = dia.Element.define("noc.ImageIconElement", {
 
     // Listen for future changes to image href
     this.on("change:attrs", (prev) => {
+      const prevHref = prev?.icon?.xlinkHref || prev?.icon?.href;
+      const nextHref = this.get("attrs")?.icon?.xlinkHref || this.get("attrs")?.icon?.href;
+      if(nextHref && nextHref !== prevHref && nextHref.startsWith("#img-")){
+        const path = this.convertImageIdToPath(nextHref);
+        this.attr("icon/xlinkHref", path);
+      } else if(nextHref && !this.get("attrs")?.icon?.xlinkHref && this.get("attrs")?.icon?.href) {
+        // Normalize legacy `href` to JointJS `xlinkHref`.
+        this.attr("icon/xlinkHref", nextHref);
+      }
       const currentStatus = prev?.icon?.status;
       const newStatus = this.get("attrs")?.icon?.status;
       if(newStatus !== currentStatus){
